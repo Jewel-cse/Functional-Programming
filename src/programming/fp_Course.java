@@ -10,6 +10,7 @@ public class fp_Course {
 
     private static void printCourse(List<String> courses) {
         courses.stream()
+                .filter(course -> course.contains("spring"))
                 .forEach(System.out::println);
     }
 }
