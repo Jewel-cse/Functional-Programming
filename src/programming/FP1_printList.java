@@ -11,10 +11,6 @@ public class FP1_printList {
     //what to do
     //function reference  apply
     private static void printListElement(List<Integer> numbers) {
-        numbers.stream().forEach(FP1_printList::print);
-    }
-
-    private static void print(Integer integer) {
-        System.out.println(integer);
+        numbers.stream().forEach(System.out::println);
     }
 }
