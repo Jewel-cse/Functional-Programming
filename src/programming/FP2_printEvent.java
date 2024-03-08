@@ -8,13 +8,20 @@ public class FP2_printEvent {
 
     public static void main(String[] args) {
         //printEven(NUMBERS);
-        printEvenSquare(NUMBERS);
+        //printEvenSquare(NUMBERS);
+        printCubeOfOdd(NUMBERS);
     }
 
     private static void printEvenSquare(List<Integer> numbers) {
         numbers.stream()
                 .filter(num ->num%2 == 0)
                 .map(num ->num*num)
+                .forEach(System.out::println);
+    }
+    private static void printCubeOfOdd(List<Integer> numbers){
+        numbers.stream()
+                .filter(num ->num%2 !=0 )
+                .map(num -> num*num*num)
                 .forEach(System.out::println);
     }
 
