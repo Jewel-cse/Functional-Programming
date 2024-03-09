@@ -24,7 +24,7 @@ public class fp_Course {
 
     private static void printNumberOfChar(List<String> courses){
         courses.stream()
-                .map(course ->course.length())
+                .map(course ->course + " " +course.length())
                 .forEach(System.out::println);
 
     }
